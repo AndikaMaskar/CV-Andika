@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andika Bahari Maskar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 25px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 25px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr{
+            border-bottom: 1px solid black;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .margin-top{
+            margin-top: 30px;
+        }
+        .bio-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden; 
+        }
+        .bio-image img {
+            width: 100%;
+            height: auto;
+        }
+        .bio-details p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .experience {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+        .experience li {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .kemampuan {
+            text-align: center;
+        }
+        .kemampuan p{
+            font-size: 18px;
+
+        }
+        footer {
+            text-align: center;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" cellspacing = "0" cellpadding = "10">
+        <tr>
+            <td>
+                <a href="{% url 'home' %}">
+                    Home
+                </a>
+            </td> 
+        </tr>
+    </table>
+    <br><br>
+    {% load static %}
+        <div class="bio-image center">
+            <img src="{% static 'myApp/images/andika.JPG' %}" alt="Andika Bahari Maskar">
+        </div>
+    <h2>PENGALAMAN ORGANISASI</h2>
+</div>
+<div class="margin-top">
+    <ul class="experience">
+        <li>
+            <strong>2019 - 2020</strong><br>
+            Ketua Umum Organisasi Siswa Intra Sekolah (OSIS)
+        </li>
+        <li>
+            <strong>2022 - 2023</strong><br>
+            Ketua Umum Organisasi Rohani Islam (ROHIS)
+        </li>
+    </ul> 
+</div>
+<div class="margin-top">
+    <h3>KEMAMPUAN</h3>
+</div>
+<div class="margin-top kemampuan">
+    <p>Menguasai bahasa pemograman C, C++, C# dan Python.<br>
+        Memiliki kemampuan analitis yang kuat, terutama dalam<br>
+        penyelesaian masalah yang kompleks.
+    </p>
+</div>
+<div class="margin-top">
+    <h4>PENCAPAIAN</h4>
+</div>
+<div class="margin-top">
+    <ul class="experience">
+        <li>
+            <strong>2017</strong><br>
+            Juara 3 lomba Mojang Jajaka<br> 
+            Tingkat Kabupaten Cianjur
+        </li>
+        <li>
+            <strong>2022</strong><br>
+            Juara 2 lomba Olimpiade Sains Nasional (OSN)<br>
+            Tingkat Kabupaten Bidang Informatika
+        </li>
+        <li>
+            <strong>2022</strong><br>
+            Medali Emas lomba Indonesian Sains Competition (ISC)<br>
+            Tingkat Nasional Bidang Informatika
+        </li>
+    </ul> 
+</div>
+<div class="margin-top">
+    <footer>
+        <p>&copy; 2024 Andika Bahari Maskar</p>
+    </footer>
+</body>
+</html>
